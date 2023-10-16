@@ -4,7 +4,7 @@
  
 **Objectives:** Introduction to object orientation and to Java; use of arrays and enumerations; string handling with the `String` class; input-output on the console.
 
-**Frequently Asked Questions**: As usual (and normal), you may have questions, we will compile them in this [frequently asked questions document](../faq_en.md). To know the latest changes that have been introduced, you can consult [the history of the document](https://github.com/informaticaucm-TPI/2324-SpaceInvaders-SOLUCION/commits/main/enunciados/faq_en.md).
+**Frequently Asked Questions**: As usual (and normal), you may have questions, we will compile them in this [frequently asked questions document](../faq_en.md). To know the latest changes that have been introduced, you can consult [the history of the document](https://github.com/informaticaucm-TPI/2324-SpaceInvaders/commits/main/enunciados/faq_en.md).
 
 <!-- TOC start -->
   * [Copy Detection](#control-de-copias)
@@ -143,15 +143,15 @@ ShockWave: OFF
 Remaining aliens: 10
 
 ──────────────────────────────────────────────────────────────── 
-|      |      |      |      |      |      | U[1] |      |      |
+|      |      |      |      |      |      | U[01]|      |      |
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |      |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      | R[2] | R[2] | R[2] | R[2] |      |      |
+|      |      |      | R[02]| R[02]| R[02]| R[02]|      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      | R[2] | R[2] | R[2] | R[2] |      |      |
+|      |      |      | R[02]| R[02]| R[02]| R[02]|      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      |      | D[1] | D[1] |      |      |      |
+|      |      |      |      | D[01]| D[01]|      |      |      |
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |  *   |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
@@ -179,10 +179,10 @@ The user will be asked what they want to do, and they can respond with one of th
 
 ```
 Command > list
-[U]CM Ship:  Harm: 1 - Shield: 3
-[R]egular Alien: Points: 5 - Harm: 0 - Shield: 2
-[D]estroyer Alien: Points: 10 - Harm: 1 - Shield: 1 
-U[f]o: Points: 25 - Harm: 0 - Shield: 1
+[U]CM Ship: damage='1', endurance='3'
+[R]egular Alien: points='5', damage='0', endurance='2'
+[D]estroyer Alien: points='10', damage='1', endurance='1'
+U[f]o: points='25', damage='0', endurance='1'
 ```
 
 - `help`: This command prompts the application to display help on how to use the commands. One line will be displayed for each command. Each line has the name of the command followed by ':' and a brief description of what the command does.
@@ -251,7 +251,7 @@ In each cycle, the movements of the game objects occur, which can lead to attack
 
    - If a bomb from an alien ship hits UCMShip, UCMShip suffers a decrease of one point of damage and the bomb is destroyed.
 
-   - If UCMShip reaches 0 damage points, the following `String` will be used to represent that the ship is destroyed: `!xx!`.
+   - If UCMShip reaches 0 damage points, the following `String` will be used to represent that the ship is destroyed: `#──#`.
 
    - If a bomb hits UCMShip's laser, both bomb and laser are destroyed.
 
@@ -291,9 +291,9 @@ Remaining aliens: 6
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |      |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      | R[2] | R[2] | R[2] | R[2] |      |      |      |
+|      |      | R[02]| R[02]| R[02]| R[02]|      |      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      | D[1] | D[1] |      |      |      |      |
+|      |      |      | D[01]| D[01]|      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |      |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 

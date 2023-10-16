@@ -143,15 +143,15 @@ ShockWave: OFF
 Remaining aliens: 10
 
 ──────────────────────────────────────────────────────────────── 
-|      |      |      |      |      |      | U[1] |      |      |
+|      |      |      |      |      |      | U[01]|      |      |
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |      |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      | R[2] | R[2] | R[2] | R[2] |      |      |
+|      |      |      | R[02]| R[02]| R[02]| R[02]|      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      | R[2] | R[2] | R[2] | R[2] |      |      |
+|      |      |      | R[02]| R[02]| R[02]| R[02]|      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      |      | D[1] | D[1] |      |      |      |
+|      |      |      |      | D[01]| D[01]|      |      |      |
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |  *   |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
@@ -179,10 +179,10 @@ Se preguntará al usuario qué quiere hacer, a lo que podrá contestar una de la
 
 ```
 Command > list
-[U]CM Ship:  Harm: 1 - Shield: 3
-[R]egular Alien: Points: 5 - Harm: 0 - Shield: 2
-[D]estroyer Alien: Points: 10 - Harm: 1 - Shield: 1 
-U[f]o: Points: 25 - Harm: 0 - Shield: 1
+[U]CM Ship: damage='1', endurance='3'
+[R]egular Alien: points='5', damage='0', endurance='2'
+[D]estroyer Alien: points='10', damage='1', endurance='1'
+U[f]o: points='25', damage='0', endurance='1'
 ```
 
 - `help`: Este comando solicita a la aplicación que muestre la ayuda relativa a cómo utilizar los comandos. Se mostrará una línea por cada comando. Cada línea tiene el nombre del comando seguida por ':' y una breve descripción de lo que hace el comando. 
@@ -251,7 +251,7 @@ En cada ciclo se producen los movimientos de los objetos del juego, que pueden d
 
 	- Si una bomba de una nave alienígena alcanza a UCMShip, UCMShip sufre un decremento de un punto de daño y la bomba es destruida.
 
-  - Si UCMShip llega a 0 puntos de daño, se utilizará el siguiente `String` para representar que la nave está destruida: `!xx!`.
+  - Si UCMShip llega a 0 puntos de daño, se utilizará el siguiente `String` para representar que la nave está destruida: `#──#`.
 
   - Si una bomba alcanza al láser de UCMShip, ambos, bomba y láser, son destruidos.
 
@@ -291,9 +291,9 @@ Remaining aliens: 6
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |      |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      | R[2] | R[2] | R[2] | R[2] |      |      |      |
+|      |      | R[02]| R[02]| R[02]| R[02]|      |      |      |
 ──────────────────────────────────────────────────────────────── 
-|      |      |      | D[1] | D[1] |      |      |      |      |
+|      |      |      | D[01]| D[01]|      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
 |      |      |      |      |      |      |      |      |      |
 ──────────────────────────────────────────────────────────────── 
