@@ -495,12 +495,18 @@ Recuerda que no se deben incluir los `.class`.
 <!-- TOC --><a name="5-pruebas"></a>
 # 5. Pruebas
 
-Junto con las instrucciones de la práctica, tendrás una carpeta con trazas del programa. Encontrarás dos ficheros con la siguiente nomenclatura:
+Junto con las instrucciones de la práctica, tendrás una carpeta con trazas del programa. Encontrarás varios ficheros con la siguiente nomenclatura:
 
 - `00-easy_25-input.txt`: es la entrada del caso de prueba `0` con nivel `easy` y semilla `25`.
 - `00-easy_25-expected.txt`: es la salida esperada para la entrada anterior.
+- `00-hard_25-input.txt`: es la entrada del caso de prueba `0` con nivel `hard` y semilla `25`.
+- `00-hard_25-expected.txt`: es la salida esperada para la entrada anterior.
+- `00-insane_25-input.txt`: es la entrada del caso de prueba `0` con nivel `insane` y semilla `25`.
+- `00-insane_25-expected.txt`: es la salida esperada para la entrada anterior.
+- `01-insane_25-input.txt`: es la entrada del caso de prueba `1` con nivel `insane` y semilla `25`.
+- `01-insane_25-expected.txt`: es la salida esperada para la entrada anterior.
 
-En Eclipse, para usar un fichero de entrada y volcar la salida en un fichero de salida, debes configurar la redirección en la pestaña `Common` de la ventana `Run Configurations`, tal y como se muestra en la siguiente figura.
+En Eclipse, para usar un fichero de entrada y volcar la salida en un fichero de salida, debes configurar la redirección en la pestaña `Common` de la ventana `Run Configurations`, tal y como se muestra en la siguiente figura. Lo más cómodo es crear, al menos, una `Run Configuration` para cada caso de prueba.
 
 ![Redirección entrada y salida](imgs/Bitmap/Pr1/runConfigurationsCommon.png)
 
