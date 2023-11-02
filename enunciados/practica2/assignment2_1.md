@@ -3,7 +3,7 @@
 	- [Introduction](#introducción)
 	- [Refactoring the solution of the previous assignment](#refactorización-de-la-solución-de-la-práctica-anterior)
 		- [*Command* Pattern](#patrón-command)
-		- [Inheritance y polymorphism](#herencia-y-polimorfismo)
+		- [Inheritance and polymorphism](#herencia-y-polimorfismo)
 		- [Game Object Container](#contenedor-de-objetos-del-juego)
 		- [Interfaces for `Game`](#interfaces-de-game)
 		- [Interfaces for `GameObject`](#interfaces-de-gameobject)
