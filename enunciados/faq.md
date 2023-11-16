@@ -31,3 +31,23 @@ Efectivamente, para que la conversión de un string a un enumerado sea sencilla 
 ```
 
 No hace falta, y de hecho está desaconsejado, hacer una distinción de casos sobre el string `direction` para dar valor al enumerado `move`.
+
+## Práctica 2
+
+### ¿Cómo hago el ShockWave si en la lista no sé el tipo de objeto que tengo?
+
+Como se indica en el enunciado, el ShokWave es el único "power-up" que existe. Como es el único se ha decidido dejarlo en la jerarquía, aunque es el objeto más raro y además queda fatal en esta jerarquía de clases que tenemos, pues según la jerarquía tiene pos, movimiento, etc. que no tienen ningún sentido. Obviamente, al estar en la jerarquía tiene que ser capaz de responder a preguntas del tipo: isInPosition(..), automaticMove(), etc. Su respuesta a casi todas ellas serán obvias: false para isInPosition(...), no hará nada para automaticMove(), etc.
+
+Volviendo a la pregunta y tratando de explicar un poco su comportamiento, os planteo la pregunta ¿qué hace el ShockWave?
+
+La respuesta es que el ShockWave elimina 1 de vida a todos los aliens y nadie lo ataca. De aquí se deduce que debe implementar el performAttack. Fijaros que ahora es importante que para decidir si atacas revises si el otro es capaza de recibir el ataque. Al ser un UCMWeapon  los demás podrán recibir o no su ataque según implementen el método de recibir el ataque de los UCMWeapon o no.  Por lo que cuando meta en la lista el ShockWave  se trata como un objeto más del contenedor (lista), se le pide que se mueva y se mira, al igual que al resto, si performAttack contra todos los objetos de la lista.
+
+Ahora nos plantamos entonces: ¿quién lo genera?, y ¿cómo sabe que lo puede generar?
+
+La UCMShip es la responsable de generarlo/lanzarlo, por lo que la nave debe saber de alguna manera que tiene ese poder o no lo tiene.
+
+¿Cómo sabe que lo tiene? 
+
+En el enunciado se indica claramente que se gana al matar al Ufo. Por lo que el Ufo es el responsable en su muerte de decirle al juego que se ha ganado el poder. El juego será el responsable de mandar ese mensaje a quien corresponda y él actuará en consecuencia.
+
+De todo esto, espero que quede claro que el ShockWave, al igual que el resto de las armas, no tienen un booleano interno indicando si están activos o no. Si están en la lista es porque están actuando, sino es porque no están jugando actualmente. Obviamente, el ShockWave de la lista una vez que actúa ataca, quedará muerto y al igual que wl reato de objetos muertos será necesario hacerlos desaparece de la lista.
