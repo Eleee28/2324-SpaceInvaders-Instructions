@@ -37,6 +37,17 @@ public class AlienManager  {
 		//TODO fill with your code
 	}
 
+	private void costumedInitialization(GameObjectContainer container, InitialConfiguration conf) {
+		for (String shipDescription : conf.getShipDescription()) {
+			String[] words = shipDescription.toLowerCase().trim().split("\\s+");
+			//AlienShip ship = ...
+			container.add(ship);
+			this.remainingAliens++;
+		}
+	}
+
+
+
 	//TODO fill with your code
 
 
