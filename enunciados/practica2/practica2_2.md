@@ -58,7 +58,7 @@ que implementaremos de forma muy sencilla en cada una de las naves alienígenas.
 
 ```java
 @Override
-protected Ship copy(GameWorld game, Position pos, AlienManager am){
+protected AlienShip copy(GameWorld game, Position pos, AlienManager am){
 	return new RegularAlien(game, pos, am);
 }
 ```
