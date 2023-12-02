@@ -90,4 +90,10 @@ public class Tests {
 				Paths.get("tests/p2/01-insane_25-output.txt"), new String[] { "INSANE", "25" });
 	}
 	
+	@Test
+	public void test04() {
+		parameterizedTest(Paths.get("tests/p2/01-easy_25-input.txt"), Paths.get("tests/p2/01-easy_25-expected.txt"),
+				Paths.get("tests/p2/01-easy_25-output.txt"), new String[] { "EASY", "25" });
+	}
+
 }
