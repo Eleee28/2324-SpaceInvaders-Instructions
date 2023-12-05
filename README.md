@@ -12,3 +12,4 @@
 
     - Actualización (02/12/2023): Messajes.java y tests/p2
 
+- [Enunciado de la Práctica 3](./enunciados/practica3/practica3.md) ([English](./enunciados/practica3/assignment3.md))
