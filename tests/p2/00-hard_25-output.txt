@@ -54,8 +54,7 @@ Remaining aliens: 10
 Command > 
 [DEBUG] Executing: m r
 
-Wrong direction:  r
-Unknown command
+Wrong direction: r
 Command > 
 [DEBUG] Executing: s
 
@@ -85,8 +84,7 @@ Remaining aliens: 10
 Command > 
 [DEBUG] Executing: m l
 
-Wrong direction:  l
-Unknown command
+Wrong direction: l
 Command > 
 [DEBUG] Executing: m left
 
