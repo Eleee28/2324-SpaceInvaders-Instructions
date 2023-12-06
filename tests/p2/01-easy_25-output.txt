@@ -527,7 +527,6 @@ Command >
 [DEBUG] Executing: r conf
 
 Invalid initial configuration conf
-Unknown command
 Command > 
 [DEBUG] Executing: r conf_3
 
