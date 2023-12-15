@@ -1,4 +1,4 @@
-Space Invaders 2.0
+Space Invaders 3.0
 
 Level: EASY
 Random generator initialized with seed: 25
@@ -36,11 +36,11 @@ File not found: "patata"
 Command > 
 [DEBUG] Executing: reset PATATA
 
-File not found: "patata"
+File not found: "PATATA"
 Command > 
 [DEBUG] Executing: reset conf_1 patata
 
-Unknown command
+Incorrect parameter number
 Command > 
 [DEBUG] Executing:  reset 
 
@@ -309,6 +309,7 @@ Command >
 [DEBUG] Executing: s
 
 Laser cannot be shot
+There is already a laser in the board
 Command > 
 [DEBUG] Executing: sl patata
 
