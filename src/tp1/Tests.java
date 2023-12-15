@@ -68,32 +68,32 @@ public class Tests {
 
 	@Test
 	public void test00() {
-		parameterizedTest(Paths.get("tests/p2/00-easy_25-input.txt"), Paths.get("tests/p2/00-easy_25-expected.txt"),
-				Paths.get("tests/p2/00-easy_25-output.txt"), new String[] { "EASY", "25" });
+		parameterizedTest(Paths.get("tests/p3/00-easy_25-input.txt"), Paths.get("tests/p3/00-easy_25-expected.txt"),
+				Paths.get("tests/p3/00-easy_25-output.txt"), new String[] { "EASY", "25" });
 	}
 
 	@Test
 	public void test01() {
-		parameterizedTest(Paths.get("tests/p2/00-hard_25-input.txt"), Paths.get("tests/p2/00-hard_25-expected.txt"),
-				Paths.get("tests/p2/00-hard_25-output.txt"), new String[] { "HARD", "25" });
+		parameterizedTest(Paths.get("tests/p3/00-hard_25-input.txt"), Paths.get("tests/p3/00-hard_25-expected.txt"),
+				Paths.get("tests/p3/00-hard_25-output.txt"), new String[] { "HARD", "25" });
 	}
 
 	@Test
 	public void test02() {
-		parameterizedTest(Paths.get("tests/p2/00-insane_25-input.txt"), Paths.get("tests/p2/00-insane_25-expected.txt"),
-				Paths.get("tests/p2/00-insane_25-output.txt"), new String[] { "INSANE", "25" });
+		parameterizedTest(Paths.get("tests/p3/00-insane_25-input.txt"), Paths.get("tests/p3/00-insane_25-expected.txt"),
+				Paths.get("tests/p3/00-insane_25-output.txt"), new String[] { "INSANE", "25" });
 	}
 
 	@Test
 	public void test03() {
-		parameterizedTest(Paths.get("tests/p2/01-insane_25-input.txt"), Paths.get("tests/p2/01-insane_25-expected.txt"),
-				Paths.get("tests/p2/01-insane_25-output.txt"), new String[] { "INSANE", "25" });
+		parameterizedTest(Paths.get("tests/p3/01-insane_25-input.txt"), Paths.get("tests/p3/01-insane_25-expected.txt"),
+				Paths.get("tests/p3/01-insane_25-output.txt"), new String[] { "INSANE", "25" });
 	}
 	
 	@Test
 	public void test04() {
-		parameterizedTest(Paths.get("tests/p2/01-easy_25-input.txt"), Paths.get("tests/p2/01-easy_25-expected.txt"),
-				Paths.get("tests/p2/01-easy_25-output.txt"), new String[] { "EASY", "25" });
+		parameterizedTest(Paths.get("tests/p3/02-easy_25-input.txt"), Paths.get("tests/p3/02-easy_25-expected.txt"),
+				Paths.get("tests/p3/02-easy_25-output.txt"), new String[] { "EASY", "25" });
 	}
 
 }
